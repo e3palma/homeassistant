@@ -1,0 +1,9 @@
+---
+
+- name: Configure VMTools and install HA aarch64
+  hosts: "{{ target }}"
+  become: true
+  
+  roles:
+    - role: esxiarm_vm
+    - role: HA
